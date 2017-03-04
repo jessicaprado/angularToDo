@@ -4,7 +4,7 @@ angular
 		'ui.router',
 
 		//feeatures
-	
+		'toDoList.list',
 		'toDoList.create',
 		
 		])
