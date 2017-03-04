@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/jessicaprado/angularToDo/issues"
   },
-  "homepage": "https://github.com/jessicaprado/angularToDo#readme"
+  "homepage": "https://github.com/jessicaprado/angularToDo#readme",
+  "dependencies": {
+    "express": "^4.15.0",
+    "mongoose": "^4.8.5"
+  }
 }
