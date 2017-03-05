@@ -16,6 +16,7 @@ function CreateCtrl($scope, item) {
 
 	vm.addItem = function() {
 		item.addItem(vm.item);
+		
 		resetView();
 	}
 }

@@ -5,7 +5,7 @@ PORT = process.env.PORT || 3000;
 
 var db = require('./db/connection.js');
 var Completed = require('./db/completed.models.js');
-var List = require('./db/list.models.js');
+var Uncompleted = require('./db/uncompleted.models.js');
 
 app.use(express.static(__dirname + '/app'));
 

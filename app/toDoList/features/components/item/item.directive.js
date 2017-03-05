@@ -21,6 +21,8 @@ function ItemCtrl() {
 	vm.items = [
 		{
 			uncompleted: ['wash car', 'eat salad'],
+		},
+		{
 			completed: ['buy puppy', 'cry']
 		}
 	]

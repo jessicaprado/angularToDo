@@ -3,7 +3,7 @@ mongoose.Promise = Promise;
 
 var Schema = mongoose.Schema;
 
-var ListItems = new Schema ({
+var UncompletedItems = new Schema ({
 	text: {
 		type: String
 	},
@@ -12,6 +12,6 @@ var ListItems = new Schema ({
 	}
 })
 
-var List = mongoose.model('List', ListItems);
+var Uncompleted = mongoose.model('Uncompleted', UncompletedItems);
 
-module.exports = List;
+module.exports = Uncompleted;
