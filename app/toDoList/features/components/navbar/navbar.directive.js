@@ -6,7 +6,7 @@ function Navbar() {
 	return {
 		restrict: 'E',
 		scope: {
-			NavbarData: "="
+			navbarData: "="
 		},
 		templateUrl: '/toDoList/features/components/navbar/navbar.html',
 		controller: NavbarCtrl,
