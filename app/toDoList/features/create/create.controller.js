@@ -7,7 +7,6 @@ function CreateCtrl($scope, item) {
 
 	resetView();
 		
-
 	function resetView() {
 		vm.item = {
 			toDoItem : '',
@@ -16,11 +15,7 @@ function CreateCtrl($scope, item) {
 	}
 
 	vm.addItem = function() {
-
 		item.addItem(vm.item);
 		resetView();
 	}
-
-	
-
 }

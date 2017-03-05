@@ -5,7 +5,7 @@ angular
 function ListCtrl($scope) {
 	var vm = this;
 
-	vm.navbarButtons = [
-		'create', 'list', 'completed'
-	]
+	
+
+
 }

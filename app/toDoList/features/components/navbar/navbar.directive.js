@@ -16,5 +16,9 @@ function Navbar() {
 }
 
 function NavbarCtrl() {
+	var vm = this;
 
+	vm.navbarButtons = [
+		'create', 'list', 'completed'
+	]
 }
