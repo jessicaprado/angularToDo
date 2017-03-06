@@ -1,3 +1,8 @@
 module.exports = {
-	items: []
+	items: [
+		{
+			toDoItem: 'eat salad',
+			dueDate: 'buy puppy',
+		}
+	]
 }
