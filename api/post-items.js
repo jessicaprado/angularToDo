@@ -1,8 +1,13 @@
-var table = require('./table.js')
+var mongoose = require('mongoose');
+var db = require('./../db/connection.js'); 
+var ToDo = require('./../db/todo.models.js'); 
+
+// Require bluebird as promise 
+var Promise = require('bluebird');
+mongoose.Promise = Promise;
 
 module.exports = function(app) {
 	 app.post('/api/table', function(req, res) {
-	 	table.items.push(req.body);
-	 	res.send(table.items)
+	 	console.log(req.body);
 	 })
 }
