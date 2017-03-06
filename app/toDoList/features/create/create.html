@@ -3,10 +3,11 @@
 
 
 <form>
-	To-Do: <input type="text" ng-model='CreateVM.toDoItem' name="toDoItem">
+	To-Do: <input type="text" ng-model='CreateVM.items.toDoItem' name="item">
 	<br>
-	Due: <input type="date" ng-model='CreateVM.dueDate' name="dueDate">
+	Due: <input type="date" ng-model='CreateVM.items.dueDate' name="dueDate">
 	<br>
-	<input ng-click="CreateVM.addItem()" type="button" value="Create"> 
+	<input type="button" value="Create" ng-click="CreateVM.addItem()"> 
 </form>
+
 

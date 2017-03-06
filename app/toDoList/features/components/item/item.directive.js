@@ -16,14 +16,12 @@ function Item() {
 }
 
 function ItemCtrl() {
-	var vm = this;
+	// var vm = this;
 
-	vm.items = [
-		{
-			uncompleted: ['wash car', 'eat salad'],
-		},
-		{
-			completed: ['buy puppy', 'cry']
-		}
-	]
+	// var items = [
+	// 	{
+	// 		uncompleted: 'eat salad',
+	// 		completed: 'buy puppy',
+	// 	}
+	// ]
 }

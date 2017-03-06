@@ -2,21 +2,23 @@ angular
 	.module('toDoList.create')
 	.controller('CreateCtrl', CreateCtrl);
 
-function CreateCtrl($scope, item) {
+function CreateCtrl($scope, table) {
 	var vm = this;
 
-	resetView();
-		
+	resetView()
+
 	function resetView() {
-		vm.item = {
-			toDoItem : '',
-			dueDate : ''
-		}
+		vm.items = [
+			{
+				toDoItem: '',
+				dueDate: '',
+			}
+		]
 	}
 
 	vm.addItem = function() {
-		item.addItem(vm.item);
-		
-		resetView();
+		table.addItem(vm.items);
+		console.log(vm.items)
+		resetView()
 	}
 }

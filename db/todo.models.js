@@ -3,15 +3,18 @@ mongoose.Promise = Promise;
 
 var Schema = mongoose.Schema;
 
-var UncompletedItems = new Schema ({
+var TodoItems = new Schema ({
 	text: {
 		type: String
 	},
 	date: {
 		type: Date
+	},
+	completed: {
+		type: Boolean
 	}
 })
 
-var Uncompleted = mongoose.model('Uncompleted', UncompletedItems);
+var Todo = mongoose.model('Todo', TodoItems);
 
-module.exports = Uncompleted;
+module.exports = Todo;

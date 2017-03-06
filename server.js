@@ -4,8 +4,10 @@ var bodyParser = require('body-parser')
 PORT = process.env.PORT || 3000;
 
 var db = require('./db/connection.js');
-var Completed = require('./db/completed.models.js');
-var Uncompleted = require('./db/uncompleted.models.js');
+var Todo = require('./db/todo.models.js');
+
+require("./api/get-items.js")(app);
+require("./api/post-items.js")(app);
 
 app.use(express.static(__dirname + '/app'));
 
