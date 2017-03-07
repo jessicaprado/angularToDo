@@ -24,8 +24,7 @@ function CreateCtrl($scope, table) {
 	vm.addItem = function(toDoItem, dueDate) {
 		vm.items.toDoItem = toDoItem;
 		vm.items.dueDate = dueDate;
-		table.addItem(vm.items);
-		console.log(vm.items)
+		table.createItem(vm.items);
 		resetView()
 	}
 }

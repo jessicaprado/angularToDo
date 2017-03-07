@@ -1,6 +1,3 @@
-<div>
-	<ul>
-		<li>{{ItemVM.itemData.text}}</li>
-	</ul>
-</div>
-
+<form action="/action_page.php" method="get">
+  	<input type="checkbox" ng-model="ItemVM.itemData.completed" ng-click="ItemVM.update(data.id)" name="{{ItemVM.itemData.text}}" value="{{ItemVM.itemData.text}}">{{ItemVM.itemData.text}}<br>
+ </form>

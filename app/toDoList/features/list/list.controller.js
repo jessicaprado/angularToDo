@@ -2,19 +2,17 @@ angular
 	.module('toDoList.list')
 	.controller('ListCtrl', ListCtrl);
 
-function ListCtrl(table, $http) {
+function ListCtrl($scope, table, $http, $filter) {
 	var vm = this;
+
+	// $scope.today = $filter('date')(new Date(), 'yyyy-MM-dd');
+	// console.log($scope.today);
 
 	vm.items = [];
 
-	  $http({
-		method: 'GET',
-		url: '/api/table'
-	}).then(function(response){
-		console.log(response);
-		//for each todo push into the todoData aray
-		response.data.forEach(function(element){
-			vm.items.push(element);
-		});
-	});
+	table.getItem(vm.items);
+
+	vm.update = function(id) {
+		table.updateItem(id, true)
+	}
 }

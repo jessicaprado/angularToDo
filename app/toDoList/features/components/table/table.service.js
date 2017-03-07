@@ -3,22 +3,47 @@ angular
 	.service('table', TableService);
 
 function TableService($http) {
-	var items = [];
+	// var items = [];
 
-	function addItem(itemData) {
-		items.push(itemData)
+	// function addItem(itemData) {
+	// 	items.push(itemData)
 
-		$http({
-			method: 'POST',
-			url: 'http://localhost:3000/api/table',
-			data: itemData
-		}).then(function(response){
-	
-		})
-
-	}
+		
+	// }
 	return {
-		items: items,
-		addItem: addItem
+		createItem: function(table) {
+			$http({
+				method: 'POST',
+				url: '/api/table',
+				data: itemData
+			}).then(function(response){
+				if (err) throw err;
+			})
+		},
+
+		getItem: function(table) {
+			$http({
+				method: 'GET',
+				url: '/api/table'
+			}).then(function(response){
+				console.log(response);
+				response.data.forEach(function(element){
+				table.push(element);
+				});
+			});
+		},
+
+		updateItem: function (id, completed) {
+			$http({
+				method: 'PUT',
+				url: '/api/table',
+				data: {
+					_id: id,
+					completed: bool
+				}
+			}).then(function(response){
+				if (err) throw err;
+			})
+		}
 	}
 }
