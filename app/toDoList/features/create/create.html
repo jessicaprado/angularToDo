@@ -7,7 +7,7 @@
 	<br>
 	Due: <input type="date" ng-model='CreateVM.items.dueDate' name="dueDate">
 	<br>
-	<input type="button" value="Create" ng-click="CreateVM.addItem()"> 
+	<input type="button" value="Create" ng-click="CreateVM.addItem(CreateVM.items.toDoItem, CreateVM.items.dueDate)"> 
 </form>
 
 
