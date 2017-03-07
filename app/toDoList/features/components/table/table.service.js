@@ -5,18 +5,6 @@ angular
 function TableService($http) {
 	var items = [];
 
-	function getTable() {
-		$http({
-			method: 'GET',
-			url: 'http://localhost:3000/api/table'
-		}).then(function(response){
-			response.data.forEach(function(item){
-				items.push(item);
-			})
-			
-		})
-	}
-
 	function addItem(itemData) {
 		items.push(itemData)
 
@@ -31,7 +19,6 @@ function TableService($http) {
 	}
 	return {
 		items: items,
-		addItem: addItem,
-		getTable: getTable
+		addItem: addItem
 	}
 }
