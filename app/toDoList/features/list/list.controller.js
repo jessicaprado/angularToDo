@@ -5,5 +5,6 @@ angular
 function ListCtrl(table) {
 	var vm = this;
 
-	vm.items = table.items;
+	vm.items = getTable.items;
+	console.log(vm.items);
 }

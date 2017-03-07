@@ -8,6 +8,14 @@ mongoose.Promise = Promise;
 
 module.exports = function(app) {
 	 app.post('/api/table', function(req, res) {
-	 	console.log(req.body);
+	 	var newItem = new ToDo ({
+	 		text: req.body.toDoItem,
+	 		date: req.body.dueDate,
+	 		completed: false
+	 	})
+
+	 	newItem.save(function(err, doc){
+	 		if (err) throw err
+	 	})
 	 })
 }
