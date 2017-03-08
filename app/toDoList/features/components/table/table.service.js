@@ -6,10 +6,11 @@ function TableService($http) {
 
 	return {
 		createItem: function(table) {
+			console.log(table)
 			$http({
 				method: 'POST',
 				url: '/api/table',
-				data: itemData
+				data: table
 			}).then(function(response){
 				if (err) throw err;
 			})
