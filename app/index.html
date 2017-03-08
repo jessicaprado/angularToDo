@@ -8,16 +8,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <meta name="fragment" content="!">
-        <link rel="stylesheet" type="text/css" href="toDoList/layout/assets/styles/style.css">
+        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Nunito:600" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="toDoList/layout/assets/styles/style.css">
 
-    </head>
+</head>
 
 <body ng-app="toDoList">
+    <h1> To Do List </h1>
 
+    <div class="everything">
 	<ui-view></ui-view>
-
+    </div>
 <script src="toDoList/toDoList.module.js"></script>
 
 <script src="toDoList/features/create/create.module.js"></script>

@@ -3,13 +3,7 @@ angular
 	.service('table', TableService);
 
 function TableService($http) {
-	// var items = [];
 
-	// function addItem(itemData) {
-	// 	items.push(itemData)
-
-		
-	// }
 	return {
 		createItem: function(table) {
 			$http({
@@ -26,7 +20,6 @@ function TableService($http) {
 				method: 'GET',
 				url: '/api/table'
 			}).then(function(response){
-				console.log(response);
 				response.data.forEach(function(element){
 				table.push(element);
 				});

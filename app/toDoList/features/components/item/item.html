@@ -1,3 +1,6 @@
-<form action="/action_page.php" method="get">
-  	<input type="checkbox" ng-model="ItemVM.itemData.completed" ng-click="ItemVM.update(data.id)" name="{{ItemVM.itemData.text}}" value="{{ItemVM.itemData.text}}">{{ItemVM.itemData.text}}<br>
- </form>
+<p>
+<div class="item">
+	<form action="/action_page.php" method="get">
+	  	<input type="checkbox" ng-model="ItemVM.itemData.completed" ng-click="ItemVM.update(data.id)" value="{{ItemVM.itemData.text}}" data-date="{{ItemVM.itemData.date}}">{{ItemVM.itemData.text}}<br>
+	 </form>
+ </div>

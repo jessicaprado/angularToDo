@@ -16,12 +16,5 @@ function Item() {
 }
 
 function ItemCtrl() {
-	// var vm = this;
-
-	// var items = [
-	// 	{
-	// 		uncompleted: 'eat salad',
-	// 		completed: 'buy puppy',
-	// 	}
-	// ]
+	
 }
