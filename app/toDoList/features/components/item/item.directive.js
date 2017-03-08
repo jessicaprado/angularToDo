@@ -15,6 +15,20 @@ function Item() {
 	}
 }
 
-function ItemCtrl() {
+function ItemCtrl($scope, table) {
 	var vm = this;
+
+	toDoItems = {};
+
+	vm.updateItem = function(){
+		table.updateItem(vm.toDoItems);
+	}
+
+	$scope.$watch(function(newValue, OldValue){
+		if(newValue) {
+			vm.toDoItems = newValue;
+			$scope.toDoItems = vm.toDoItems;
+		}
+	})
+	
 }

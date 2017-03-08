@@ -27,17 +27,15 @@ function TableService($http) {
 			});
 		},
 
-		updateItem: function (id, completed) {
-			$http({
+		updateItem: function (table) {
+			console.log(table);
+			/*$http({
 				method: 'PUT',
 				url: '/api/table',
-				data: {
-					_id: id,
-					completed: bool
-				}
+				data: item
 			}).then(function(response){
 				if (err) throw err;
-			})
+			})*/
 		}
 	}
 }

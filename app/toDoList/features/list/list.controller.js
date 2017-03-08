@@ -11,7 +11,7 @@ function ListCtrl(table) {
 
 	table.getItem(vm.items);
 	
-	vm.update = function(id) {
+	/*vm.update = function(id) {
 		table.updateItem(id, true)
-	}
+	}*/
 }

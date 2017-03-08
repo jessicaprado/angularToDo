@@ -1,18 +1,11 @@
 <navbar></navbar>
-<p>
-<div class="overdue">Overdue
-	
-</div>
-<p>
 
-<div class="dueToday">Due Today
+
+<div class="dueToday">
 	<item ng-repeat="item in ListVM.items"
 		  item-data="item"
 		  ng-if="item.completed !== true">
 			{{item}} 
 	</item>
 </div>
-<p>
-<div class="dueLater">Due Later
 
-</div>
