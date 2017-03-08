@@ -7,7 +7,6 @@ angular
 		'toDoList.list',
 		'toDoList.create',
 		'toDoList.completed',
-		
 		])
 	.config(appConfig);
 

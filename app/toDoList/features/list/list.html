@@ -8,15 +8,11 @@
 <div class="dueToday">Due Today
 	<item ng-repeat="item in ListVM.items"
 		  item-data="item"
-		  ng-if="item.completed === false"
-		  ng-if="item.data-date == ListVM.today">
-			{{item.data-date}} 
+		  ng-if="item.completed !== true">
+			{{item}} 
 	</item>
-
-	
 </div>
 <p>
 <div class="dueLater">Due Later
 
 </div>
-{{ListVM.today}}

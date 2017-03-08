@@ -2,10 +2,10 @@ angular
 	.module('toDoList.list')
 	.controller('ListCtrl', ListCtrl);
 
-function ListCtrl($scope, table, $http, $filter) {
+function ListCtrl(table) {
 	var vm = this;
 
-	vm.today = $filter('date')(new Date(), 'yyyy-MM-dd');
+	vm.today = new Date();
 
 	vm.items = [];
 
