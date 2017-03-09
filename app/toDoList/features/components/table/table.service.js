@@ -6,7 +6,6 @@ function TableService($http) {
 
 	return {
 		createItem: function(table) {
-			console.log(table)
 			$http({
 				method: 'POST',
 				url: '/api/table',
@@ -28,7 +27,6 @@ function TableService($http) {
 		},
 
 		updateItem: function (table) {
-			console.log(table);
 			$http({
 				method: 'PUT',
 				url: '/api/table',

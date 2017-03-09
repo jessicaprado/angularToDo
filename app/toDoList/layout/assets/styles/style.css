@@ -40,7 +40,7 @@ h1 {
 .item {
 	display: flex;
 	justify-content: center;
-	background-color: #e6ccff;
+	background-color: #FFCBB9;
 	border-radius: 5px;
     padding: 10px;  
 	height: 15px;
@@ -48,19 +48,6 @@ h1 {
 	font-size: 16px;
 	font-family: 'Nunito', sans-serif;
 	vertical-align: middle;
-}
-
-.dueToday {
-	
-}
-
-.overdue,
-.dueToday,
-.dueLater {
-	font-size: 18px;
-	font-family: 'Nunito', sans-serif;
-	text-align: center;
-	text-decoration: underline;
 }
 
 .createTheItem {
