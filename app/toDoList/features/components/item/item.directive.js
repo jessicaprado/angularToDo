@@ -21,7 +21,12 @@ function ItemCtrl($scope, table) {
 	toDoItems = {};
 
 	vm.updateItem = function(){
-		table.updateItem(vm.toDoItems);
+		var update = {
+			_id: vm.toDoItems.ItemVM.itemData._id,
+			completed: vm.toDoItems.ItemVM.itemData.completed
+		};
+		console.log(update);
+		table.updateItem(update);
 	}
 
 	$scope.$watch(function(newValue, OldValue){

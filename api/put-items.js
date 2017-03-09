@@ -7,11 +7,11 @@ var Promise = require('bluebird');
 mongoose.Promise = Promise;
 
 module.exports = function(app) {
-app.put('/api/todo', function(req, res){
+app.put('/api/table', function(req, res){
         ToDo.findByIdAndUpdate(req.body._id, {completed: req.body.completed}, function(err, post){
             if(err) return next(err);
             console.log(post);
-            res.send(200);
+            res.sendStatus(200);
         });
     });
 }

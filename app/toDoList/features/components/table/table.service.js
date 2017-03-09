@@ -29,13 +29,13 @@ function TableService($http) {
 
 		updateItem: function (table) {
 			console.log(table);
-			/*$http({
+			$http({
 				method: 'PUT',
 				url: '/api/table',
-				data: item
-			}).then(function(response){
+				data: table
+			}).then(function(err, response){
 				if (err) throw err;
-			})*/
+			})
 		}
 	}
 }
