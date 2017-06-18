@@ -12,6 +12,7 @@ function TableService($http) {
 				data: table
 			}).then(function(response){
 				if (err) throw err;
+				console.log(response);
 			})
 		},
 
@@ -34,6 +35,15 @@ function TableService($http) {
 			}).then(function(err, response){
 				if (err) throw err;
 			})
-		}
+		},
+
+		deleteItem: function (table) {
+            $http({
+				method: 'DELETE',
+				url: '/api/table/' + table
+            }).then(function (err, res) {
+                if (err) throw err;
+            })
+        }
 	}
 }

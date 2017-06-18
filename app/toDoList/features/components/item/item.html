@@ -1,6 +1,9 @@
 <p>
 <div class="item">
 	<li>
-	  	<input type="checkbox" ng-model="ItemVM.itemData.completed" ng-click="ItemVM.updateItem()">{{ItemVM.itemData.text}}<br>
+	  	<input type="checkbox"
+			   ng-model="ItemVM.itemData.completed"
+			   ng-click="ItemVM.updateItem(ItemVM.itemData._id)">{{ItemVM.itemData.text}}
+		<button ng-click="ItemVM.delete(ItemVM.itemData._id)">X</button><br>
 	</li>
  </div>

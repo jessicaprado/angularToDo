@@ -22,18 +22,16 @@ function ItemCtrl($scope, table) {
 
 	vm.updateItem = function(){
 		var update = {
-			_id: vm.toDoItems.ItemVM.itemData._id,
-			completed: vm.toDoItems.ItemVM.itemData.completed
+			_id: vm.itemData._id,
+			completed: vm.itemData.completed
 		};
 		console.log(update);
 		table.updateItem(update);
-	}
+	};
 
-	$scope.$watch(function(newValue, OldValue){
-		if(newValue) {
-			vm.toDoItems = newValue;
-			$scope.toDoItems = vm.toDoItems;
-		}
-	})
+	vm.delete = function(){
+		var id = vm.itemData._id;
+		table.deleteItem(id);
+	};
 	
 }
